@@ -6,19 +6,21 @@
     <title>my first html website</title>
 </head>
 <body>
-    <!-- here we have the example of all the sizes of heading -->
+  <header>
+        <!-- here we have the example of all the sizes of heading -->
     <h1>heading</h1>
     <h2>heading</h2>
     <h3>heading</h3>
     <h4>heading</h4>
     <h5>heading</h5>
     <h6>heading</h6>
+  </header>
+  <main>
     <hr>
     <p>hello this is me practicing my html for making websites</p>
     <hr>
-
     <!-- here we have example of both relative and absolute link -->
-    <a href="https://openai.com/">Open AI</a>
+    <a href="https://openai.com/" >Open AI</a>
     <br>
     <a href="/khemu.html">khemu</a>
     <hr>
@@ -43,17 +45,96 @@
     <hr>
 
     <!-- here we are using the sub and superscript tag -->
-     <p>H<sub>2</sub>O</p>
-     <p>A<sup>n</sup>+B</p>
+    <p>H<sub>2</sub>O</p>
+    <p>A<sup>n</sup>+B</p>
+    <hr>
+
+    <!-- Here we are using the pre tags  -->
+    <pre>here are using the pre tag to see   how it works in our website
+      this is the second line in my code 
+      this is the third line my code
+    </pre>
+
+    <!-- Revisiting the anchor key with more features(attributes) -->
+    <p>These two elements are both clickables</p>
+    <a href = "www.google.com" target = "_main">Google</a>
+    <a href = "https://chatgpt.com/"><img src = "coding image.jpg" height = 100></a>
+
+    <!-- Here we are using the list tag to create a list of items But only the Unordered tag-->
+     <ul>
+      <li>Name</li>
+        <ul>
+          <li>khemesh</li>
+          <li>Karan</li>
+        </ul>
+      <li>Class</li>
+        <ul>
+          <li>12<sup>th</sup></li>
+          <li>12<sup>th</sup></li>
+        </ul>
+     </ul>
+
+    <!-- Here we are using the table tag to create a table of items -->
+     <table>
+      <caption>My first table</caption>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Class</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            khemesh
+          </td>
+          <td>
+            Karan
+          </td>
+        </tr>
+                <tr>
+          <td>
+            12<sup>th</sup>
+          </td>
+          <td>
+            12<sup>th</sup>
+          </td>
+        </tr>
+      </tbody>
+     </table>
      <hr>
+  </main>
+  <footer>
 
-     <!-- Here we are using the pre tags  -->
-      <pre>here are using the pre tag to see   how it works in our website
-        this is the second line in my code 
-        this is the third line my code
-      </pre>
+    <!-- Here we are now going to see how we fill form in html -->
+    <form action = "action.php">
+      <label for="id1">
+        <input type="text" placeholder = "Enter your name" id="name1" name="name">
+      </label>
+      <label for="id1">
+        <input type="password" placeholder = "Enter your password" id="password" name="password">
+      </label>
+      <br>
+      <label for="id2">
+        <input type="radio" value = "CLASS 12" name="CLASS" id = "identity 1">Class 12
+        <input type="radio" value = "CLASS 11" name="CLASS" id = "identity 2">Class 11
+      </label>
+      <br>
 
+      <!-- Here we are using the class and id attributes to style the form -->
+      <div id = "div1" class = "class1">
+        <label for="id7">
+          <input type="checkbox" value = "Hobby 1" name="Hobby" id = "id3">Hobby 1
+          <input type="checkbox" value = "Hobby 2" name="Hobby" id = "id4">Hobby 2
+        </label>
+      </div>
+      <div id = "div2" class = "class1">
+        <label for="id6">
+          <input type="submit" value = "Submit" id = "id5">
+        </label>
+      </div>
+    </form>
 
-
+  </footer>
 </body>
 </html>
